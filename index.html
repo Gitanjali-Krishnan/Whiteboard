@@ -136,10 +136,9 @@
            
 
         }
-        document.getElementById("canvas").addEventListener("mousedown",startDraw)
-        document.getElementById("canvas").addEventListener("mouseup",endDraw)
-        document.getElementById("canvas").addEventListener("mousemove", draw);
-
+        document.getElementById("canvas").addEventListener("mousedown touchstart",startDraw)
+        document.getElementById("canvas").addEventListener("mouseup touchend",endDraw)
+        document.getElementById("canvas").addEventListener("mousemove touchmove", draw);
         function erase(){
             window.location.href=
               "https://gitanjali-krishnan.github.io/Whiteboard/";
